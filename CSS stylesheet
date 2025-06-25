@@ -1,0 +1,152 @@
+/* Athena EMR-Compatible Embedded App Stylesheet */
+
+/* === Primary Branding === */
+:root {
+  --primary-purple: #8A72A7;
+  --white: #FFFFFF;
+  --accent-teal: #0093B2;
+  --soft-blue: #E2ECF7;
+  --alert-red: #F26522;
+  --neutral-grey: #EFEFEF;
+  --text-dark-grey: #333333;
+}
+
+/* === Section Background Colors === */
+.bg-hpi {
+  background-color: #E9E2F2;
+}
+
+.bg-ros {
+  background-color: #E3F2F1;
+}
+
+.bg-physical {
+  background-color: var(--soft-blue);
+}
+
+.bg-impression {
+  background-color: var(--neutral-grey);
+}
+
+.bg-plan {
+  background-color: #E5F3E8;
+}
+
+.bg-diagnostic {
+  background-color: #FFF7E5;
+}
+
+.bg-medications {
+  background-color: #FBEAE7;
+}
+
+.bg-allergies {
+  background-color: #F6E3E9;
+}
+
+/* === Typography === */
+body, button, input, textarea {
+  font-family: 'Source Sans Pro', 'Inter', sans-serif;
+  color: var(--text-dark-grey);
+}
+
+h1, .header-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h2, .subheader-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+p, .body-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.small-text {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* === Layout & Containers === */
+.container {
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar {
+  background-color: #F0F0F0;
+  padding: 16px;
+  border-right: 1px solid #D9D9D9;
+}
+
+/* === Buttons & Interactive Elements === */
+.button-primary {
+  background-color: var(--accent-teal);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: #007b93;
+}
+
+.button-secondary {
+  background-color: var(--white);
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-secondary:hover {
+  background-color: #f7f3f9;
+}
+
+/* === Alerts & Notifications === */
+.alert-error {
+  background-color: var(--alert-red);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.alert-success {
+  background-color: #62BB46;
+  color: var(--white);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* === Tabs & Navigation === */
+.tab-active {
+  border-bottom: 2px solid var(--accent-teal);
+  color: var(--accent-teal);
+  font-weight: 600;
+}
+
+.tab-inactive {
+  color: var(--text-dark-grey);
+}
+
+/* === Icons === */
+.icon {
+  color: var(--text-dark-grey);
+}
+
+.icon-active {
+  color: var(--primary-purple);
+}
